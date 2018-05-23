@@ -12,7 +12,7 @@ object Target {
     })
   }
 
-  def underTest2(title: String, slice: Int, funcs: List[String => Int]): List[Int] = {
+  def foldOnFunctionList(title: String, slice: Int, funcs: List[String => Int]): List[Int] = {
     funcs.foldLeft(List.empty[Int])((acc, func) => {
       slide(title, slice).map(str => func(str)).min :: acc
     })
@@ -31,7 +31,7 @@ object Target {
     }).toList
   }
 
-  def underTest9(title: String, slice: Int, funcs: List[String => Int]): List[Int] = {
+  def foldOnFinctionAndTitle(title: String, slice: Int, funcs: List[String => Int]): List[Int] = {
     funcs.foldLeft(List.empty[Int])((acc, func) => {
       slide(title, slice).foldLeft(Int.MaxValue)((tempMin, str) => {func(str).min(tempMin)}) :: acc
     })
