@@ -2,7 +2,7 @@ package com.lansalo.benchmarck
 
 import java.util.concurrent.TimeUnit
 
-import org.openjdk.jmh.annotations.Mode.{AverageTime, Throughput}
+import org.openjdk.jmh.annotations.Mode.{AverageTime, SampleTime, SingleShotTime, Throughput}
 import org.openjdk.jmh.annotations._
 import com.lansalo.Target._
 
@@ -40,7 +40,7 @@ class TargetPerformance {
   }
 
   @Benchmark
-  @BenchmarkMode(Mode.AverageTime)
+  @BenchmarkMode(Array(AverageTime))
   @OutputTimeUnit(TimeUnit.MICROSECONDS)
   @Fork(value = 1)
   def testFoldOnFunctionListAvg(state: BenchmarkState): Unit = {
@@ -48,7 +48,7 @@ class TargetPerformance {
   }
 
   @Benchmark
-  @BenchmarkMode(Array(Mode.Throughput, Mode.AverageTime, Mode.SampleTime, Mode.SingleShotTime))
+  @BenchmarkMode(Array(Throughput, AverageTime, SampleTime, SingleShotTime))
   @OutputTimeUnit(TimeUnit.MICROSECONDS)
   @throws[InterruptedException]
   @Fork(value = 1)
