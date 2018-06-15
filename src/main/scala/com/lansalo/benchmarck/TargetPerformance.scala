@@ -8,39 +8,40 @@ import com.lansalo.Target._
 
 @BenchmarkMode(Array(Throughput))
 @OutputTimeUnit(TimeUnit.SECONDS)
-@Warmup(iterations = 10)
-@Measurement(iterations = 10)
+@Warmup(iterations = 40)
+@Measurement(iterations = 30)
 @State(Scope.Benchmark)
 class TargetPerformance {
 
   import Scopes._
 
   @Benchmark
-  @Fork(value = 1, jvmArgsAppend = Array("-XX:+UseG1GC"))
+  @Fork(value = 1/*, jvmArgsAppend = Array("-XX:+UseG1GC")*/)
   def testMapOnFunctionsAndList(state: BenchmarkState): Unit = {
-    mapOnFunctionsAndList(state.title, state.slice, state.funcs)
+    mapOnFunctionsAndList(state.title, state.slice, state.funcs) // 0.911 ops/s [Average]
   }
 
   @Benchmark
-  @Fork(value = 1, jvmArgsAppend = Array("-XX:+UseG1GC"))
+  @Fork(value = 1/*, jvmArgsAppend = Array("-XX:+UseG1GC")*/)
   def testFoldOnFunctionList(state: BenchmarkState): Unit = {
-    foldOnFunctionList(state.title, state.slice, state.funcs)
+    foldOnFunctionList(state.title, state.slice, state.funcs) // 1.418 ops/s [Average]
   }
 
   @Benchmark
-  @Fork(value = 1, jvmArgsAppend = Array("-XX:+UseG1GC"))
+  @Fork(value = 1/*, jvmArgsAppend = Array("-XX:+UseG1GC")*/)
   def testFoldOnFinctionAndTitle(state: BenchmarkState): Unit = {
-    foldOnFinctionAndTitle(state.title, state.slice, state.funcs)
+    foldOnFinctionAndTitle(state.title, state.slice, state.funcs) // 1.376 ops/s [Average]
   }
+/*
 
   @Benchmark
   @Fork(value = 1)
   def testFoldOnFunctionListWithoutG1(state: BenchmarkState): Unit = {
-    foldOnFunctionList(state.title, state.slice, state.funcs)
+    foldOnFunctionList(state.title, state.slice, state.funcs) // 19.584 ops/s [Average]
   }
 
   @Benchmark
-  @BenchmarkMode(Mode.AverageTime)
+  @BenchmarkMode(Array(Mode.AverageTime))
   @OutputTimeUnit(TimeUnit.MICROSECONDS)
   @Fork(value = 1)
   def testFoldOnFunctionListAvg(state: BenchmarkState): Unit = {
@@ -48,38 +49,41 @@ class TargetPerformance {
   }
 
   @Benchmark
-  @BenchmarkMode(Array(Mode.Throughput, Mode.AverageTime, Mode.SampleTime, Mode.SingleShotTime))
+  @BenchmarkMode(Array(Mode.AverageTime, Mode.SampleTime, Mode.SingleShotTime))
   @OutputTimeUnit(TimeUnit.MICROSECONDS)
   @throws[InterruptedException]
   @Fork(value = 1)
   def testFoldOnFunctionListAll(state: BenchmarkState): Unit = {
     foldOnFunctionList(state.title, state.slice, state.funcs)
   }
+*/
 
 
 }
 
 object Scopes {
 
+  import com.lansalo.HashingFunctions.{hashingFunctions, hashingFunctionsStandard}
+
   val novelTitle = "The Persecution and Assassination of Jean-Paul Marat as Performed by the Inmates of the Asylum of Charenton Under the Direction of the Marquis de Sade"
 
   @State(Scope.Benchmark)
   class BenchmarkState {
-    val funcs: List[String => Int] = hashingFunctions(100)
+    val funcs: List[String => Int] = hashingFunctions(200)
     val title: String = novelTitle
     val slice: Int = 4
   }
 
   @State(Scope.Benchmark)
   class BenchmarkStateWithStream {
-    val funcs: Stream[String => Int] = hashingFunctions(100).toStream
+    val funcs: Stream[String => Int] = hashingFunctions(200).toStream
     val title: String = novelTitle
     val slice: Int = 4
   }
 
   @State(Scope.Benchmark)
   class BenchmarkStateWithHash {
-    val funcs: List[String => Int] = hashingFunctionsStandard(100)
+    val funcs: List[String => Int] = hashingFunctionsStandard(200)
     val title: String = novelTitle
     val slice: Int = 4
   }
