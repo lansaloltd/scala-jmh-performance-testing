@@ -13,11 +13,11 @@ class TargetSpec extends FunSuite {
   }
 
   test("foldOnFunctionList should return the expected result for a given title") {
-    assert(foldOnFunctionList(Title, 4, hashingFunctions(10)).sorted === ExpectedResult)
+    assert(foldOnFunctionsList(Title, 4, hashingFunctions(10)).sorted === ExpectedResult)
   }
 
   test("foldOnFinctionAndTitle should return the expected result for a given title") {
-    assert(foldOnFinctionAndTitle(Title, 4, hashingFunctions(10)).sorted === ExpectedResult)
+    assert(foldOnFinctionsAndTitle(Title, 4, hashingFunctions(10)).sorted === ExpectedResult)
   }
 
 }

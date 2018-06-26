@@ -1,0 +1,39 @@
+// Throughput
+MemoryFootprint.testFoldOnFinctionAndTitle          78.372
+MemoryFootprintG1.testFoldOnFinctionAndTitle        62.809
+
+// Young Generation Collections
+MemoryFootprint.testFoldOnFinctionAndTitle:     ·sun.gc.collector.0.invocations   85.433
+MemoryFootprintG1.testFoldOnFinctionAndTitle:   ·sun.gc.collector.0.invocations   99.500
+
+// Young Generation Garbage Collection Time
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.collector.0.time     80916099.900
+MemoryFootprintG1.testFoldOnFinctionAndTitle:·sun.gc.collector.0.time   144090261.333
+
+// Number of full GC Collections
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.collector.1.invocations      0
+MemoryFootprintG1.testFoldOnFinctionAndTitle:·sun.gc.collector.1.invocations    0
+
+// Full GC Collections time
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.collector.1.time     0
+MemoryFootprintG1.testFoldOnFinctionAndTitle:·sun.gc.collector.1.time   0
+
+// Eden Space Used
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.0.space.0.used    1224419.467
+MemoryFootprintG1.testFoldOnFinctionAndTitle:·sun.gc.generation.0.space.0.used  0
+
+// Survivor 0 Space Used
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.0.space.1.used    3276.800
+MemoryFootprintG1.testFoldOnFinctionAndTitle:·sun.gc.generation.0.space.1.used  0
+
+// Survivor 1 Space Used
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.0.space.2.used    0
+MemoryFootprintG1.testFoldOnFinctionAndTitle:·sun.gc.generation.0.space.2.used  0
+
+// Old Space Used
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.1.space.0.used    40140.800
+MemoryFootprintG1.testFoldOnFinctionAndTitle:·sun.gc.generation.1.space.0.used  22508.000
+
+// Metaspace
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.metaspace.used   1269.867
+MemoryFootprintG1.testFoldOnFinctionAndTitle:·sun.gc.metaspace.used 1279.200

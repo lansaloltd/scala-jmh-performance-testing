@@ -10,14 +10,14 @@ object Target {
   }
 
   // candidate 2
-  def foldOnFunctionList(title: String, slice: Int, funcs: List[String => Int]): List[Int] = {
+  def foldOnFunctionsList(title: String, slice: Int, funcs: List[String => Int]): List[Int] = {
     funcs.foldLeft(List.empty[Int])((acc, func) => {
       slide(title, slice).map(str => func(str)).min :: acc
     })
   }
 
   // candidate 3
-  def foldOnFinctionAndTitle(title: String, slice: Int, funcs: List[String => Int]): List[Int] = {
+  def foldOnFinctionsAndTitle(title: String, slice: Int, funcs: List[String => Int]): List[Int] = {
     funcs.foldLeft(List.empty[Int])((acc, func) => {
       slide(title, slice).foldLeft(Int.MaxValue)((tempMin, str) => {func(str).min(tempMin)}) :: acc
     })

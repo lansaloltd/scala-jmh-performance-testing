@@ -9,6 +9,7 @@ lazy val root = (project in file(".")).
     scalaVersion := "2.12.3",
     libraryDependencies ++= Seq(
       "org.openjdk.jmh" % "jmh-generator-annprocess" % "1.21",
+      "commons-codec" % "commons-codec" % "1.9",
       "org.scalatest" %% "scalatest" % "3.0.1" % Test
     )
   )

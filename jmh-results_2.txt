@@ -1,0 +1,336 @@
+https://stackoverflow.com/questions/23938699/meaning-of-the-hs-gc-profiler-counters-in-jmh/24011373
+
+
+
+Benchmark                                                                                              Mode  Cnt            Score          Error  Units
+MemoryFootprint.testFoldOnFinctionAndTitle                                                            thrpt   30           78.372 ±       11.958  ops/s
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.collector.0.invocations                            thrpt   30           85.433 ±       21.212      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.collector.0.lastEntryTime                          thrpt   30  10007846730.200 ± 42077141.044      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.collector.0.lastExitTime                           thrpt   30  10007846435.833 ± 42126597.072      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.collector.0.time                                   thrpt   30     80916099.900 ±  4861575.142      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.collector.1.invocations                            thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.collector.1.lastEntryTime                          thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.collector.1.lastExitTime                           thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.collector.1.time                                   thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.compressedclassspace.capacity                      thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.compressedclassspace.maxCapacity                   thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.compressedclassspace.minCapacity                   thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.compressedclassspace.used                          thrpt   30           36.000 ±      131.739      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.0.capacity                              thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.0.maxCapacity                           thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.0.minCapacity                           thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.0.space.0.capacity                      thrpt   30      3967112.533 ± 78335223.268      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.0.space.0.initCapacity                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.0.space.0.maxCapacity                   thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.0.space.0.used                          thrpt   30      1224419.467 ± 45890709.473      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.0.space.1.capacity                      thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.0.space.1.initCapacity                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.0.space.1.maxCapacity                   thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.0.space.1.used                          thrpt   30         3276.800 ±    36065.184      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.0.space.2.capacity                      thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.0.space.2.initCapacity                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.0.space.2.maxCapacity                   thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.0.space.2.used                          thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.0.spaces                                thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.1.capacity                              thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.1.maxCapacity                           thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.1.minCapacity                           thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.1.space.0.capacity                      thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.1.space.0.initCapacity                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.1.space.0.maxCapacity                   thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.1.space.0.used                          thrpt   30        40140.800 ±     4395.028      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.generation.1.spaces                                thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.metaspace.capacity                                 thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.metaspace.maxCapacity                              thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.metaspace.minCapacity                              thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.metaspace.used                                     thrpt   30         1269.867 ±     1489.409      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.avgBaseFootprint                            thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.avgMajorIntervalTime                        thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.avgMajorPauseTime                           thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.avgMinorIntervalTime                        thrpt   30            3.067 ±       69.813      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.avgMinorPauseTime                           thrpt   30            0.033 ±        0.480      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.avgOldLive                                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.avgPretenuredPaddedAvg                      thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.avgPromotedAvg                              thrpt   30            1.167 ±       26.492      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.avgPromotedDev                              thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.avgPromotedPaddedAvg                        thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.avgSurvivedAvg                              thrpt   30          376.967 ±     9563.026      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.avgSurvivedDev                              thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.avgSurvivedPaddedAvg                        thrpt   30          130.333 ±     9621.847      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.avgYoungLive                                thrpt   30          376.967 ±     9563.026      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.boundaryMoved                               thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.changeOldGenForMajPauses                    thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.changeOldGenForMinPauses                    thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.changeYoungGenForMajPauses                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.changeYoungGenForMinPauses                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.collectors                                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.decideAtFullGc                              thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.decreaseForFootprint                        thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.decrementTenuringThresholdForGcCost         thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.decrementTenuringThresholdForSurvivorLimit  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.desiredSurvivorSize                         thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.edenSize                                    thrpt   30      3967112.533 ± 78335223.268      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.freeSpace                                   thrpt   30      3967112.533 ± 78335223.268      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.fullFollowsScavenge                         thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.gcTimeLimitExceeded                         thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.generations                                 thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.increaseOldGenForThroughput                 thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.increaseYoungGenForThroughput               thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.incrementTenuringThresholdForGcCost         thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.liveAtLastFullGc                            thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.liveSpace                                   thrpt   30          376.533 ±     9562.184      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.majorCollectionSlope                        thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.majorGcCost                                 thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.majorPauseOldSlope                          thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.majorPauseYoungSlope                        thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.maxTenuringThreshold                        thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.minorCollectionSlope                        thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.minorGcCost                                 thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.minorPauseOldSlope                          thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.minorPauseTime                              thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.minorPauseYoungSlope                        thrpt   30            0.033 ±        0.122      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.mutatorCost                                 thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.oldCapacity                                 thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.oldEdenSize                                 thrpt   30      4176827.733 ± 84527479.345      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.oldPromoSize                                thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.promoSize                                   thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.promoted                                    thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.scavengeSkipped                             thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.survived                                    thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.survivorOverflowed                          thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.tenuringThreshold                           thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.policy.youngCapacity                               thrpt   30      4176827.733 ± 84527479.345      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.tlab.alloc                                         thrpt   30       522100.000 ± 10693288.880      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.tlab.allocThreads                                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.tlab.fastWaste                                     thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.tlab.fills                                         thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.tlab.gcWaste                                       thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.tlab.maxFastWaste                                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.tlab.maxFills                                      thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.tlab.maxGcWaste                                    thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.tlab.maxSlowAlloc                                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.tlab.maxSlowWaste                                  thrpt   30            1.100 ±       36.480      ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.tlab.slowAlloc                                     thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFinctionAndTitle:·sun.gc.tlab.slowWaste                                     thrpt   30            1.100 ±       36.480      ?
+MemoryFootprint.testFoldOnFunctionList                                                                thrpt   30           95.562 ±        3.589  ops/s
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.collector.0.invocations                                thrpt   30          102.933 ±       13.889      ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.collector.0.lastEntryTime                              thrpt   30  10006511854.433 ± 34539419.986      ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.collector.0.lastExitTime                               thrpt   30  10006509298.400 ± 34414538.822      ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.collector.0.time                                       thrpt   30     82504725.967 ±  4364766.486      ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.collector.1.invocations                                thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.collector.1.lastEntryTime                              thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.collector.1.lastExitTime                               thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.collector.1.time                                       thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.compressedclassspace.capacity                          thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.compressedclassspace.maxCapacity                       thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.compressedclassspace.minCapacity                       thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.compressedclassspace.used                              thrpt   30           36.000 ±      131.739      ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.0.capacity                                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.0.maxCapacity                               thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.0.minCapacity                               thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.0.space.0.capacity                          thrpt   30      2516582.400 ± 70275023.667      ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.0.space.0.initCapacity                      thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.0.space.0.maxCapacity                       thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.0.space.0.used                              thrpt   30      4787821.867 ± 62071283.415      ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.0.space.1.capacity                          thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.0.space.1.initCapacity                      thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.0.space.1.maxCapacity                       thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.0.space.1.used                              thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.0.space.2.capacity                          thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.0.space.2.initCapacity                      thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.0.space.2.maxCapacity                       thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.0.space.2.used                              thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.0.spaces                                    thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.1.capacity                                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.1.maxCapacity                               thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.1.minCapacity                               thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.1.space.0.capacity                          thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.1.space.0.initCapacity                      thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.1.space.0.maxCapacity                       thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.1.space.0.used                              thrpt   30        41779.200 ±     5051.138      ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.generation.1.spaces                                    thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.metaspace.capacity                                     thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.metaspace.maxCapacity                                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.metaspace.minCapacity                                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.metaspace.used                                         thrpt   30         1095.467 ±     1253.146      ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.avgBaseFootprint                                thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.avgMajorIntervalTime                            thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.avgMajorPauseTime                               thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.avgMinorIntervalTime                            thrpt   30            1.667 ±       37.030      ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.avgMinorPauseTime                               thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.avgOldLive                                      thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.avgPretenuredPaddedAvg                          thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.avgPromotedAvg                                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.avgPromotedDev                                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.avgPromotedPaddedAvg                            thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.avgSurvivedAvg                                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.avgSurvivedDev                                  thrpt   30          185.000 ±     3196.935      ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.avgSurvivedPaddedAvg                            thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.avgYoungLive                                    thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.boundaryMoved                                   thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.changeOldGenForMajPauses                        thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.changeOldGenForMinPauses                        thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.changeYoungGenForMajPauses                      thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.changeYoungGenForMinPauses                      thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.collectors                                      thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.decideAtFullGc                                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.decreaseForFootprint                            thrpt   30            0.200 ±        2.681      ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.decrementTenuringThresholdForGcCost             thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.decrementTenuringThresholdForSurvivorLimit      thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.desiredSurvivorSize                             thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.edenSize                                        thrpt   30      2516582.400 ± 70275023.667      ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.freeSpace                                       thrpt   30      2516582.400 ± 70275023.667      ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.fullFollowsScavenge                             thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.gcTimeLimitExceeded                             thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.generations                                     thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.increaseOldGenForThroughput                     thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.increaseYoungGenForThroughput                   thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.incrementTenuringThresholdForGcCost             thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.liveAtLastFullGc                                thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.liveSpace                                       thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.majorCollectionSlope                            thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.majorGcCost                                     thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.majorPauseOldSlope                              thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.majorPauseYoungSlope                            thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.maxTenuringThreshold                            thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.minorCollectionSlope                            thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.minorGcCost                                     thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.minorPauseOldSlope                              thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.minorPauseTime                                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.minorPauseYoungSlope                            thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.mutatorCost                                     thrpt   30            0.033 ±        0.511      ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.oldCapacity                                     thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.oldEdenSize                                     thrpt   30      3460300.800 ± 72800168.265      ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.oldPromoSize                                    thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.promoSize                                       thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.promoted                                        thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.scavengeSkipped                                 thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.survived                                        thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.survivorOverflowed                              thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.tenuringThreshold                               thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.policy.youngCapacity                                   thrpt   30      3460300.800 ± 72800168.265      ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.tlab.alloc                                             thrpt   30       424151.567 ±  9118885.839      ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.tlab.allocThreads                                      thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.tlab.fastWaste                                         thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.tlab.fills                                             thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.tlab.gcWaste                                           thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.tlab.maxFastWaste                                      thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.tlab.maxFills                                          thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.tlab.maxGcWaste                                        thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.tlab.maxSlowAlloc                                      thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.tlab.maxSlowWaste                                      thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.tlab.slowAlloc                                         thrpt   30              ≈ 0                     ?
+MemoryFootprint.testFoldOnFunctionList:·sun.gc.tlab.slowWaste                                         thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList                                                             thrpt   30           66.515 ±        5.725  ops/s
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.collector.0.invocations                             thrpt   30           78.700 ±       16.579      ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.collector.0.lastEntryTime                           thrpt   30  10011937252.000 ± 81473240.790      ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.collector.0.lastExitTime                            thrpt   30  10011935477.300 ± 81473068.136      ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.collector.0.time                                    thrpt   30     76951277.500 ±  6517899.692      ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.collector.1.invocations                             thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.collector.1.lastEntryTime                           thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.collector.1.lastExitTime                            thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.collector.1.time                                    thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.compressedclassspace.capacity                       thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.compressedclassspace.maxCapacity                    thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.compressedclassspace.minCapacity                    thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.compressedclassspace.used                           thrpt   30           36.000 ±      131.739      ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.0.capacity                               thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.0.maxCapacity                            thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.0.minCapacity                            thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.0.space.0.capacity                       thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.0.space.0.initCapacity                   thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.0.space.0.maxCapacity                    thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.0.space.0.used                           thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.0.space.1.capacity                       thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.0.space.1.initCapacity                   thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.0.space.1.maxCapacity                    thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.0.space.1.used                           thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.0.space.2.capacity                       thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.0.space.2.initCapacity                   thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.0.space.2.maxCapacity                    thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.0.space.2.used                           thrpt   30         2184.533 ±    27532.736      ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.0.spaces                                 thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.1.capacity                               thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.1.maxCapacity                            thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.1.minCapacity                            thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.1.space.0.capacity                       thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.1.space.0.initCapacity                   thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.1.space.0.maxCapacity                    thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.1.space.0.used                           thrpt   30        41779.200 ±     5811.854      ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.generation.1.spaces                                 thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.metaspace.capacity                                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.metaspace.maxCapacity                               thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.metaspace.minCapacity                               thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.metaspace.used                                      thrpt   30         1076.267 ±     1238.962      ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.avgBaseFootprint                             thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.avgMajorIntervalTime                         thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.avgMajorPauseTime                            thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.avgMinorIntervalTime                         thrpt   30            0.467 ±       85.716      ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.avgMinorPauseTime                            thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.avgOldLive                                   thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.avgPretenuredPaddedAvg                       thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.avgPromotedAvg                               thrpt   30            0.067 ±       60.403      ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.avgPromotedDev                               thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.avgPromotedPaddedAvg                         thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.avgSurvivedAvg                               thrpt   30          122.100 ±     7394.712      ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.avgSurvivedDev                               thrpt   30           13.233 ±     4023.953      ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.avgSurvivedPaddedAvg                         thrpt   30          161.800 ±     8253.003      ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.avgYoungLive                                 thrpt   30          122.100 ±     7394.712      ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.boundaryMoved                                thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.changeOldGenForMajPauses                     thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.changeOldGenForMinPauses                     thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.changeYoungGenForMajPauses                   thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.changeYoungGenForMinPauses                   thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.collectors                                   thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.decideAtFullGc                               thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.decreaseForFootprint                         thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.decrementTenuringThresholdForGcCost          thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.decrementTenuringThresholdForSurvivorLimit   thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.desiredSurvivorSize                          thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.edenSize                                     thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.freeSpace                                    thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.fullFollowsScavenge                          thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.gcTimeLimitExceeded                          thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.generations                                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.increaseOldGenForThroughput                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.increaseYoungGenForThroughput                thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.incrementTenuringThresholdForGcCost          thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.liveAtLastFullGc                             thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.liveSpace                                    thrpt   30          122.667 ±     7398.701      ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.majorCollectionSlope                         thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.majorGcCost                                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.majorPauseOldSlope                           thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.majorPauseYoungSlope                         thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.maxTenuringThreshold                         thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.minorCollectionSlope                         thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.minorGcCost                                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.minorPauseOldSlope                           thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.minorPauseTime                               thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.minorPauseYoungSlope                         thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.mutatorCost                                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.oldCapacity                                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.oldEdenSize                                  thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.oldPromoSize                                 thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.promoSize                                    thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.promoted                                     thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.scavengeSkipped                              thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.survived                                     thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.survivorOverflowed                           thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.tenuringThreshold                            thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.policy.youngCapacity                                thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.tlab.alloc                                          thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.tlab.allocThreads                                   thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.tlab.fastWaste                                      thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.tlab.fills                                          thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.tlab.gcWaste                                        thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.tlab.maxFastWaste                                   thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.tlab.maxFills                                       thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.tlab.maxGcWaste                                     thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.tlab.maxSlowAlloc                                   thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.tlab.maxSlowWaste                                   thrpt   30            1.100 ±       19.179      ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.tlab.slowAlloc                                      thrpt   30              ≈ 0                     ?
+MemoryFootprint.testMapOnFunctionsAndList:·sun.gc.tlab.slowWaste                                      thrpt   30            1.100 ±       19.179      ?
+
+Benchmark result is saved to jmh-result.text
+
+Process finished with exit code 0

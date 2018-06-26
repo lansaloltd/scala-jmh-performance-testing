@@ -6,31 +6,31 @@ import org.openjdk.jmh.annotations.Mode.{AverageTime, Throughput}
 import org.openjdk.jmh.annotations._
 import com.lansalo.Target._
 
-@BenchmarkMode(Array(Throughput))
+/*@BenchmarkMode(Array(Throughput))
 @OutputTimeUnit(TimeUnit.SECONDS)
 @Warmup(iterations = 40)
 @Measurement(iterations = 30)
-@State(Scope.Benchmark)
+@State(Scope.Benchmark)*/
 class TargetPerformance {
 
   import Scopes._
 
-  @Benchmark
-  @Fork(value = 1/*, jvmArgsAppend = Array("-XX:+UseG1GC")*/)
+  //@Benchmark
+  //@Fork(value = 1/*, jvmArgsAppend = Array("-XX:+UseG1GC")*/)
   def testMapOnFunctionsAndList(state: BenchmarkState): Unit = {
     mapOnFunctionsAndList(state.title, state.slice, state.funcs) // 0.911 ops/s [Average]
   }
 
-  @Benchmark
-  @Fork(value = 1/*, jvmArgsAppend = Array("-XX:+UseG1GC")*/)
-  def testFoldOnFunctionList(state: BenchmarkState): Unit = {
-    foldOnFunctionList(state.title, state.slice, state.funcs) // 1.418 ops/s [Average]
+  //@Benchmark
+  //@Fork(value = 1/*, jvmArgsAppend = Array("-XX:+UseG1GC")*/)
+  def testFoldOnFunctionsList(state: BenchmarkState): Unit = {
+    foldOnFunctionsList(state.title, state.slice, state.funcs) // 1.418 ops/s [Average]
   }
 
-  @Benchmark
-  @Fork(value = 1/*, jvmArgsAppend = Array("-XX:+UseG1GC")*/)
-  def testFoldOnFinctionAndTitle(state: BenchmarkState): Unit = {
-    foldOnFinctionAndTitle(state.title, state.slice, state.funcs) // 1.376 ops/s [Average]
+  //@Benchmark
+  //@Fork(value = 1/*, jvmArgsAppend = Array("-XX:+UseG1GC")*/)
+  def testFoldOnFunctionsAndTitle(state: BenchmarkState): Unit = {
+    foldOnFinctionsAndTitle(state.title, state.slice, state.funcs) // 1.376 ops/s [Average]
   }
 /*
 
