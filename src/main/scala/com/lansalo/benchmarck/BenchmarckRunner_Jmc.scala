@@ -15,21 +15,17 @@ object BenchmarckRunner_Jmc{
   }
 }
 
-@Warmup(iterations = 40)
+@Warmup(iterations = 30)
 @Measurement(iterations = 30)
 @State(Scope.Benchmark)
 private class FlightRecorderDump extends TargetPerformance {
 
   @Benchmark
-  @Fork(value = 1, jvmArgsAppend = Array("-XX:+UnlockCommercialFeatures -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints -XX:FlightRecorderOptions=defaultrecording=true,dumponexit=true,dumponexitpath=/tmp/foldOnFunctionsAndTitle.jfr"))
-  override def testFoldOnFunctionsAndTitle(state: Scopes.BenchmarkState): Unit = super.testFoldOnFunctionsAndTitle(state)
-
-  @Benchmark
-  @Fork(value = 1, jvmArgsAppend = Array("-XX:+UnlockCommercialFeatures -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints -XX:FlightRecorderOptions=defaultrecording=true,dumponexit=true,dumponexitpath=/tmp/foldOnFunctionsList.jfr"))
+  @Fork(value = 1 /*, jvmArgsAppend = Array("-XX:+UnlockCommercialFeatures -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints -XX:FlightRecorderOptions=defaultrecording=true,dumponexit=true,dumponexitpath=/tmp/foldOnFunctionsList.jfr")*/)
   override def testFoldOnFunctionsList(state: Scopes.BenchmarkState): Unit = super.testFoldOnFunctionsList(state)
 
   @Benchmark
-  @Fork(value = 1, jvmArgsAppend = Array("-XX:+UnlockCommercialFeatures -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints -XX:FlightRecorderOptions=defaultrecording=true,dumponexit=true,dumponexitpath=/tmp/MapOnFunctionsAndList.jfr"))
+  @Fork(value = 1)
   override def testMapOnFunctionsAndList(state: Scopes.BenchmarkState): Unit = super.testMapOnFunctionsAndList(state)
 
 }

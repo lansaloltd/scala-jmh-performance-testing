@@ -1,3 +1,3 @@
-Benchmark                    Mode  Cnt        Score       Error  Units
-ToString.testDigestUtils    thrpt   30  2476587.643 ± 43024.839  ops/s
-ToString.testMessageDigest  thrpt   30  2387971.327 ± 20977.849  ops/s
+Benchmark                                      Mode  Cnt   Score   Error  Units
+FlightRecorderDump.testFoldOnFunctionsList    thrpt   30  66.252 ± 1.553  ops/s
+FlightRecorderDump.testMapOnFunctionsAndList  thrpt   30  67.967 ± 1.771  ops/s

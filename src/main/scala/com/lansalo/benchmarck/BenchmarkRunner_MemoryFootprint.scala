@@ -21,14 +21,10 @@ object BenchmarkRunner_MemoryFootprint {
 
 @BenchmarkMode(Array(Throughput))
 @OutputTimeUnit(TimeUnit.SECONDS)
-@Warmup(iterations = 40)
+@Warmup(iterations = 30)
 @Measurement(iterations = 30)
 @State(Scope.Benchmark)
 private class MemoryFootprint extends TargetPerformance {
-
-  @Benchmark
-  @Fork(value = 1)
-  override def testFoldOnFunctionsAndTitle(state: Scopes.BenchmarkState): Unit = super.testFoldOnFunctionsAndTitle(state)
 
   @Benchmark
   @Fork(value = 1)

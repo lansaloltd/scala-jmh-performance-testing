@@ -27,11 +27,6 @@ class TargetPerformance {
     foldOnFunctionsList(state.title, state.slice, state.funcs) // 1.418 ops/s [Average]
   }
 
-  //@Benchmark
-  //@Fork(value = 1/*, jvmArgsAppend = Array("-XX:+UseG1GC")*/)
-  def testFoldOnFunctionsAndTitle(state: BenchmarkState): Unit = {
-    foldOnFinctionsAndTitle(state.title, state.slice, state.funcs) // 1.376 ops/s [Average]
-  }
 /*
 
   @Benchmark
@@ -63,27 +58,13 @@ class TargetPerformance {
 
 object Scopes {
 
-  import com.lansalo.HashingFunctions.{hashingFunctions, hashingFunctionsStandard}
+  import com.lansalo.HashingFunctions.hashingFunctions
 
   val novelTitle = "The Persecution and Assassination of Jean-Paul Marat as Performed by the Inmates of the Asylum of Charenton Under the Direction of the Marquis de Sade"
 
   @State(Scope.Benchmark)
   class BenchmarkState {
     val funcs: List[String => Int] = hashingFunctions(200)
-    val title: String = novelTitle
-    val slice: Int = 4
-  }
-
-  @State(Scope.Benchmark)
-  class BenchmarkStateWithStream {
-    val funcs: Stream[String => Int] = hashingFunctions(200).toStream
-    val title: String = novelTitle
-    val slice: Int = 4
-  }
-
-  @State(Scope.Benchmark)
-  class BenchmarkStateWithHash {
-    val funcs: List[String => Int] = hashingFunctionsStandard(200)
     val title: String = novelTitle
     val slice: Int = 4
   }
