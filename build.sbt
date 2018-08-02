@@ -10,6 +10,10 @@ lazy val root = (project in file(".")).
     libraryDependencies ++= Seq(
       "org.openjdk.jmh" % "jmh-generator-annprocess" % "1.21",
       "commons-codec" % "commons-codec" % "1.9",
+      "com.storm-enroute" %% "scalameter" % "0.8.2",
       "org.scalatest" %% "scalatest" % "3.0.1" % Test
-    )
+    ),
+    testFrameworks += new TestFramework("org.scalameter.ScalaMeterFramework"),
+    parallelExecution in Test := false
   )
+
