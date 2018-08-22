@@ -1,8 +1,8 @@
 package com.lansalo
 
-import org.scalatest.FunSuite
 import com.lansalo.HashingFunctions._
 import com.lansalo.Target._
+import org.scalatest.FunSuite
 
 class TargetSpec extends FunSuite {
 

@@ -4,8 +4,8 @@ import java.io.File
 
 import com.lansalo.HashingFunctions.hashingFunctions
 import com.lansalo.Target.{foldOnFunctionsList, mapOnFunctionsAndList}
-import org.scalameter.{Bench, Gen, Measurer}
 import org.scalameter.persistence.SerializationPersistor
+import org.scalameter.{Bench, Gen, Measurer}
 
 import scala.util.Random
 

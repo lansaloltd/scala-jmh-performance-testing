@@ -4,8 +4,6 @@ import java.util.concurrent.TimeUnit
 
 import com.lansalo.jmh.{Scopes, TargetPerformance}
 import org.openjdk.jmh.annotations._
-import org.openjdk.jmh.annotations.BenchmarkMode
-import org.openjdk.jmh.annotations.Mode
 import org.openjdk.jmh.results.format.ResultFormatType
 import org.openjdk.jmh.runner.Runner
 import org.openjdk.jmh.runner.options.{Options, OptionsBuilder}

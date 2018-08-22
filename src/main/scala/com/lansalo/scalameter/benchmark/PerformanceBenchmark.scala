@@ -1,12 +1,11 @@
 package com.lansalo.scalameter.benchmark
 
-import com.lansalo.HashingFunctions.hashingFunctions
-import com.lansalo.Target._
-
 import java.io.File
 
-import org.scalameter.{Bench, Gen}
+import com.lansalo.HashingFunctions.hashingFunctions
+import com.lansalo.Target._
 import org.scalameter.persistence.SerializationPersistor
+import org.scalameter.{Bench, Gen}
 
 import scala.util.Random
 
